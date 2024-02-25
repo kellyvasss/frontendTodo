@@ -38,7 +38,9 @@ URL for API: http://todoapi-env.eba-rgxj6v26.eu-north-1.elasticbeanstalk.com/
     
 
 ## Run the app
-    Download the project and run in IntelliJ or other editor. You need internet connection.
+    ![CodePipeline](https://github.com/kellyvasss/frontendTodo/assets/124784916/c6dfed51-d234-4c32-bbd3-816bdcc7b953)
+![CodePipeline](https://github.com/kellyvasss/frontendTodo/assets/124784916/23dae682-51e0-45b8-86ff-74624c5abc20)
+Download the project and run in IntelliJ or other editor. You need internet connection.
     Click on the runnable file and open up a browser with address "localhost:8080".
 
 
