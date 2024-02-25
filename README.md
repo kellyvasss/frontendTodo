@@ -2,9 +2,9 @@
 URL for API: http://todoapi-env.eba-rgxj6v26.eu-north-1.elasticbeanstalk.com/
 
 ## AWS
-    This is hosted on AWS with CI/CD. 
-    The tests for the API are done at workflows GitHub and the process CI/CD runs at AWS.
-    You do not need any authentication to use the API.
+    This is hosted on AWS with CI/CD. You do not need any authentication to use the API.
+    The API is configured with a workflow file that uses GitHub actions for building and testing the code
+    
 
 ## Run the app
     Download the project and run in IntelliJ or other editor. You need internet connection.
