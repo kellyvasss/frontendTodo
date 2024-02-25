@@ -1,9 +1,40 @@
 ## Frontend Application for Todo API 
 URL for API: http://todoapi-env.eba-rgxj6v26.eu-north-1.elasticbeanstalk.com/
 
-## AWS
+## Simple explaniation of the API's workflow
     This is hosted on AWS with CI/CD. You do not need any authentication to use the API.
-    The API is configured with a workflow file that uses GitHub actions for building and testing the code
+    The API is configured with a workflow file that uses GitHub actions for testing the code.
+    The building is done at AWS CodeBuild and the deployment is through AWS Elastic Beanstalk with a automized pipeline for a CI/CD.
+
+## AWS Pipeline Process
+
+1. Integration with GitHub Repository:
+
+        AWS Pipeline is integrated with GitHub repository to monitor changes and updates.
+        When you push to GitHub repository, AWS Pipeline is automatically triggered to initiate the CI/CD process.
+   
+2. Build Phase:
+
+        Upon pipeline triggering, AWS Pipeline fetches the source code from the GitHub repository.
+        A build environment is set up where all necessary dependencies and tools are downloaded and configured.
+        The build process is executed, which may involve compiling the code, creating distribution packages, and running unit tests.
+   
+3. Testing Phase:
+
+        After the build phase, tests are conducted to ensure the code functions as expected.
+        This may include unit tests, integration tests, and other forms of automated tests.
+        If any tests fail, the process is aborted, and a notification is sent to the email.
+
+4. Deployment to Elastic Beanstalk:
+
+        Once all tests are passed, AWS Pipeline sends the built and tested code to Elastic Beanstalk for deployment.
+        Elastic Beanstalk handles the creation of environments, server configuration, and automatic scaling based on load.
+        The application then runs on the Elastic Beanstalk environment and is accessible to users.
+   
+
+    
+ 
+    
     
 
 ## Run the app
